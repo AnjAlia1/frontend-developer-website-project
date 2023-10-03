@@ -232,39 +232,76 @@ nav a {
   margin-top: 4rem;
 }
 
-
-
-/* Media query for screens with a maximum width of 768px (e.g., tablets) */
-@media (max-width: 768px) {
-  .logo {
-    max-width: 40%;
-    /* Adjust the logo size for smaller screens */
+/* For Iphone SE */
+@media (max-width: 378px) and (max-height:800px) {
+  header{
+    display: none;
   }
-
-  .main-section {
-    background-size: cover;
-    /* Adjust background image sizing */
+  .feedback-container h1{
+    max-width: 100%;
+    height:8rem;
+    font-size: 2rem;
+    margin-top:50%;
+    text-align: center;
+    border:0.5px solid pink;
   }
-
-  .feedback-card {
-    width: 100%;
-    /* Adjust the card width for smaller screens */
-    height: 100vh;
-    margin: 0 auto;
-    /* Center the card horizontally on smaller screens */
-    background-color: aqua;
-  }
-
-  /* Adjust font size and colors for better text visibility */
-  .feedback-container h1,
-  .feedback-container h2,
-  .feedback-container h3,
-  .feedback-container p {
+  .feedback-container h3{
     font-size: 1.5rem;
-    /* Adjust font size for readability */
-    color: #333;
-    /* Adjust text color for better contrast */
+    margin:0% 0% 20% 0%;
+    font-weight: 100;
+    text-align: center;
+    border:0.5px solid pink;
+
   }
-
-
+  .feedback-card{
+    gap:0;
+    text-align: center;
+    width: 100%;
+    background-color: hotpink;
+    display: flex;
+    flex-direction: column-reverse;
+    /* align-items: center;  */
+  }
+  .customer-photo{
+    width: 50%;
+    background-color: aqua;
+    margin-left: 0%;
+    display: flex;
+    align-items: flex-start;
+  }
+  .customer-photo img {
+    width: 85%;
+    align-self: flex-start; /* Align the customer photo to the left */
+    margin: 0%; /* Adjust margins as needed */
+    border-radius: 10%;
+    border: 1px dashed blue;
+    display: flex;
+    order: 0;
+  }
+  .customer-details {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .company-name,
+  .customer-name,
+  .feedback-text {
+    margin-bottom: 0;
+  }
+  .company-name {
+    line-height: 1.8;
+    font-weight: 200;
+    font-size: larger;
+  }
+  .customer-name {
+    font-weight: 550;
+    margin-top: 0.6rem;
+    white-space: nowrap; /* Prevent line break between company-name and customer-name */
+  }
+  .feedback-text {
+    line-height: 1.5;
+    font-weight: 520;
+    font-size: 1.1rem;
+  }
 }
