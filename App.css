@@ -1,0 +1,270 @@
+header {
+  background-color: white;
+
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+}
+
+.line-through-text {
+  text-decoration: line-through;
+}
+
+.underline-text {
+  border-bottom: 4px solid black;
+}
+
+.main-section {
+  background-image: url("https://growthcx-website-assets.s3.ap-south-1.amazonaws.com/customers/Frame.png");
+  background-repeat: no-repeat;
+  width: 100vw;
+}
+
+.logo {
+  max-width: 20%;
+  height: auto;
+
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  font-size: 2rem;
+  justify-content: space-around;
+}
+
+nav li {
+  /* margin-right: 20px; */
+  padding: 0.8rem;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.links ul {
+  margin: 0;
+  padding: 0;
+}
+
+header li:nth-last-child(1) {
+  background: black;
+  margin-bottom: 5%;
+}
+
+header li:last-child a {
+  color: white;
+  /* Change the text color to red for the last <li> */
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.feedback-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 05%; */
+  /* text-align: center; */
+  gap: 4.5rem;
+}
+
+.feedback-container h3 {
+  margin: 0% 10%;
+  font-weight: 550;
+  font-size: 1.9rem;
+  word-spacing: 4%;
+  /* margin-bottom: 1rem; */
+}
+
+.feedback-container>h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 8%;
+  max-width: 60%;
+  height: 120px;
+  font-weight: 900;
+}
+
+.customer-details {
+  width: 40%;
+  display: flex;
+  padding-bottom: 1px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.company-name,
+.customer-name,
+.feedback-text {
+  margin-bottom: 0;
+}
+
+.company-name {
+  line-height: 1.8;
+  font-weight: 200;
+  font-size: larger;
+}
+
+.customer-name {
+  font-weight: 550;
+  margin-top: 0.6rem;
+}
+
+.feedback-text {
+  line-height: 1.5;
+  font-weight: 520;
+  font-size: 1.1rem;
+}
+
+.services-btn {
+  display: flex;
+  width: 20rem;
+  gap: 4%;
+  padding-bottom: 10%;
+  padding-left: 2%;
+}
+
+.services-btn span {
+  background-color: #d3d3d3;
+  padding: 1%;
+}
+
+.feedback-card img {
+  width: 60%;
+  align-items: center;
+  margin: 10% 30%;
+  border-radius: 10%;
+}
+
+.feedback-card {
+  width: 55%;
+  height: 62%;
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  border-top: 1px solid #000;
+}
+
+.feedback-card:nth-child(odd) {
+  margin-left: 30%;
+}
+
+.footer-section {
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8%;
+}
+
+
+.footer-content {
+  background-color: black;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 1%;
+  border: 1px sold orangered;
+}
+
+.footer-content h1 {
+  font-size: 3rem;
+  width: 50%;
+  text-align: center;
+}
+
+.footer-section a {
+  color: #d3d3d3;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex;
+  align-items: flex-start;
+}
+
+.links h3 {
+  font-weight: 200;
+  line-height: 2;
+}
+
+.links a {
+  display: inline;
+  text-decoration: none;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+
+.links li {
+  margin-bottom: 0.5rem;
+}
+
+.refe-links {
+  display: flex;
+  gap: 10rem;
+  margin-top: 2rem;
+}
+
+.call-btn {
+  background: whitesmoke;
+  padding: 0.5rem 2.5rem;
+  font-size: larger;
+  font-weight: 600;
+  border: none;
+  margin-top: 2rem;
+
+}
+
+.copyright-text {
+  font-size: 14px;
+  margin-top: 4rem;
+}
+
+
+
+/* Media query for screens with a maximum width of 768px (e.g., tablets) */
+@media (max-width: 768px) {
+  .logo {
+    max-width: 40%;
+    /* Adjust the logo size for smaller screens */
+  }
+
+  .main-section {
+    background-size: cover;
+    /* Adjust background image sizing */
+  }
+
+  .feedback-card {
+    width: 100%;
+    /* Adjust the card width for smaller screens */
+    height: 100vh;
+    margin: 0 auto;
+    /* Center the card horizontally on smaller screens */
+    background-color: aqua;
+  }
+
+  /* Adjust font size and colors for better text visibility */
+  .feedback-container h1,
+  .feedback-container h2,
+  .feedback-container h3,
+  .feedback-container p {
+    font-size: 1.5rem;
+    /* Adjust font size for readability */
+    color: #333;
+    /* Adjust text color for better contrast */
+  }
+
+
+}
