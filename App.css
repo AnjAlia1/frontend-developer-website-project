@@ -243,52 +243,84 @@ nav a {
     font-size: 2rem;
     margin-top:50%;
     text-align: center;
-    border:0.5px solid pink;
   }
   .feedback-container h3{
     font-size: 1.5rem;
     margin:0% 0% 20% 0%;
     font-weight: 100;
     text-align: center;
-    border:0.5px solid pink;
 
   }
-  .feedback-card{
+  .feedback-card {
+    flex-direction: row; /* Change to row for smaller screens */
+    gap: 2rem; /* Adjust the gap as needed */
+    width: 60%;
+    padding: 4%;
+    height: fit-content;
+  }
+
+  .customer-details {
+    flex: 1; /* Allow the details to take up available space */
+    margin-right: 1rem; /* Add some margin between details and photo */
+  }
+
+  .customer-photo {
+    width: 30%; /* Adjust the width as needed */
+    height: 20%;
+  }
+  .feedback-text {
+    margin-bottom: 0;
+    width: 180%;
+  }
+  .refe-links{
+    display: flex;
+    flex-direction: column;
+    gap:2%;
+  }
+  .footer-section img{
+    width: 100vw;
+    align-content: center;
+  }
+}
+
+  /* .feedback-card{
     gap:0;
     text-align: center;
     width: 100%;
     background-color: hotpink;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column-reverse; */
     /* align-items: center;  */
-  }
-  .customer-photo{
+  /* } */
+  /* .customer-photo{
     width: 50%;
     background-color: aqua;
     margin-left: 0%;
     display: flex;
     align-items: flex-start;
-  }
-  .customer-photo img {
+  } */
+  /* .customer-photo img {
     width: 85%;
     align-self: flex-start; /* Align the customer photo to the left */
-    margin: 0%; /* Adjust margins as needed */
-    border-radius: 10%;
-    border: 1px dashed blue;
-    display: flex;
-    order: 0;
-  }
-  .customer-details {
+    /* margin: 0%; /* Adjust margins as needed */
+    /* border-radius: 10%; */
+    /* border: 1px dashed blue; */
+    /* display: flex; */
+    /* order: 0; */
+  /* } */ */
+  /* .customer-details {
     width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-  }
-  .company-name,
-  .customer-name,
-  .feedback-text {
+  } */ 
+  /* .company-name,
+  .customer-name, */
+  /* .feedback-text {
     margin-bottom: 0;
-  }
+    width: 100%;
+    background-color: bisque;
+  } */
   .company-name {
     line-height: 1.8;
     font-weight: 200;
@@ -304,4 +336,3 @@ nav a {
     font-weight: 520;
     font-size: 1.1rem;
   }
-}
